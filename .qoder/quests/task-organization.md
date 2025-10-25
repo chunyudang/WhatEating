@@ -409,7 +409,7 @@ backend/
 
 任务清单：
 
-1. 使用 create-expo-app 或 React Native CLI 初始化项目
+1. 使用 React Native CLI 初始化项目
 2. 配置 React Native Web 支持
 3. 安装必要依赖
 4. 创建组件目录结构

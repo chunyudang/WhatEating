@@ -1,0 +1,94 @@
+.result-display {
+  padding: 2rem 1rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.result-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.dish-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 0.6s ease;
+}
+
+.dish-name {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.dish-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.dish-category {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .result-card {
+    padding: 2rem;
+  }
+  
+  .dish-icon {
+    font-size: 3rem;
+  }
+  
+  .dish-name {
+    font-size: 2rem;
+  }
+  
+  .dish-description {
+    font-size: 1rem;
+  }
+}
